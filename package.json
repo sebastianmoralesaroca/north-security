@@ -1,0 +1,23 @@
+{
+  "name": "north-security",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sebastianmoralesaroca/north-security.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sebastianmoralesaroca/north-security/issues"
+  },
+  "homepage": "https://github.com/sebastianmoralesaroca/north-security#readme",
+  "devDependencies": {
+    "tailwindcss": "^4.1.17"
+  }
+}
