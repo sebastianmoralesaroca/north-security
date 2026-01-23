@@ -49,9 +49,8 @@ export function NosotrosEquipo() {
           <!-- Team Member Card 1 -->
           <div class="group relative bg-white rounded-2xl sm:rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
             <!-- Image Background -->
-            <div class="h-60 sm:h-64 md:h-72 relative overflow-hidden">
-              <img src="/public/image/44.png" alt="Carlos Mendez" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-              <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent"></div>
+            <div class="h-60 sm:h-64 md:h-72 relative overflow-hidden bg-[#C42100]">
+              <div class="absolute inset-0 "></div>
             </div>
 
             <!-- Info Section -->
@@ -73,9 +72,8 @@ export function NosotrosEquipo() {
 
           <!-- Team Member Card 2 -->
           <div class="group relative bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
-            <div class="h-72 relative overflow-hidden">
-              <img src="/public/image/44.png" alt="Leticia Rojas" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-              <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent"></div>
+            <div class="h-72 relative overflow-hidden bg-[#C42100]">
+              <div class="absolute inset-0 "></div>
             </div>
             
             <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
@@ -96,9 +94,8 @@ export function NosotrosEquipo() {
 
           <!-- Team Member Card 3 -->
           <div class="group relative bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
-            <div class="h-72 relative overflow-hidden">
-              <img src="/public/image/44.png" alt="Angel Torres" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-              <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent"></div>
+            <div class="h-72 relative overflow-hidden bg-[#C42100]">
+              <div class="absolute inset-0 "></div>
             </div>
             
             <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
@@ -119,9 +116,8 @@ export function NosotrosEquipo() {
 
           <!-- Team Member Card 4 -->
           <div class="group relative bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
-            <div class="h-72 relative overflow-hidden">
-              <img src="/public/image/44.png" alt="María González" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-              <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent"></div>
+            <div class="h-72 relative overflow-hidden bg-[#C42100]">
+              <div class="absolute inset-0 "></div>
             </div>
             
             <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
@@ -142,9 +138,8 @@ export function NosotrosEquipo() {
 
           <!-- Team Member Card 5 -->
           <div class="group relative bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
-            <div class="h-72 relative overflow-hidden">
-              <img src="/public/image/44.png" alt="Roberto Sánchez" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-              <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent"></div>
+            <div class="h-72 relative overflow-hidden bg-[#C42100]">
+              <div class="absolute inset-0 "></div>
             </div>
             
             <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
@@ -165,9 +160,8 @@ export function NosotrosEquipo() {
 
           <!-- Team Member Card 6 -->
           <div class="group relative bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
-            <div class="h-72 relative overflow-hidden">
-              <img src="/public/image/44.png" alt="Patricia Vargas" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-              <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent"></div>
+            <div class="h-72 relative overflow-hidden bg-[#C42100]">
+              <div class="absolute inset-0 "></div>
             </div>
             
             <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
