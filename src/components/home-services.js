@@ -33,7 +33,7 @@ export function ServiciosResumen() {
             <h3 class="text-lg sm:text-xl font-bold text-white text-center mb-2">Vigilancia por Cámara (CCTV)</h3>
             <!-- DESCRIPCIÓN MEJORADA -->
             <p class="text-white text-xs sm:text-sm text-center leading-snug">
-              Implementamos sistemas de CCTV de alta definición con análisis de video inteligente. Ofrecemos grabación continua y monitoreo en tiempo real desde nuestra central, accesible remotamente.
+              Proveemos personal calificado para la operación y monitoreo de sistemas CCTV, con vigilancia en tiempo real, detección de incidencias y control permanente de tus instalaciones.
             </p>
           </div>
 

@@ -52,7 +52,6 @@ export function Footer() {
             <h4 class="font-semibold text-gray-800 mb-4">Menú</h4>
             <ul class="space-y-2.5">
               <li><a href="#inicio" class="text-sm text-gray-600 hover:text-gray-900 transition-colors">Inicio</a></li>
-              <li><a href="#nosotros" class="text-sm text-gray-600 hover:text-gray-900 transition-colors">Nosotros</a></li>
               <li><a href="#servicios" class="text-sm text-gray-600 hover:text-gray-900 transition-colors">Servicios</a></li>
               <li><a href="#contacto" class="text-sm text-gray-600 hover:text-gray-900 transition-colors">Contacto</a></li>
             </ul>

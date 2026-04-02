@@ -10,28 +10,28 @@ export function CardPrincipal() {
         <!-- Card 1: Experiencia -->
         <div class="bg-white rounded-lg shadow-md p-6 sm:p-7 md:p-8 hover:shadow-xl transition-shadow duration-300">
           <div class="flex justify-center mb-4 sm:mb-5 md:mb-6">
-            <img src="/public/icon/experiencia.png" alt="Experiencia" class="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16">
+            <img src="/public/icon/edificio.png" alt="Instalaciones" class="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16">
           </div>
-          <h3 class="text-xl sm:text-2xl font-bold text-blue-900 mb-3 sm:mb-4 text-center">Experiencia</h3>
-          <p class="text-sm sm:text-base text-gray-600 text-center leading-relaxed">Profesionales con formación continua y años de experiencia en seguridad privada, garantizando tu tranquilidad.</p>
+          <h3 class="text-xl sm:text-2xl font-bold text-blue-900 mb-3 sm:mb-4 text-center">Instalaciones</h3>
+          <p class="text-sm sm:text-base text-gray-600 text-center leading-relaxed">Protección integral para edificios, oficinas, condominios y recintos privados, con control de acceso y vigilancia permanente.</p>
         </div>
 
         <!-- Card 2: Dotación -->
         <div class="bg-white rounded-lg shadow-md p-6 sm:p-7 md:p-8 hover:shadow-xl transition-shadow duration-300">
           <div class="flex justify-center mb-4 sm:mb-5 md:mb-6">
-            <img src="/public/icon/guardia.png" alt="Tecnología" class="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16">
+            <img src="/public/icon/escenario.png" alt="Eventos" class="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16">
           </div>
-          <h3 class="text-xl sm:text-2xl font-bold text-blue-900 mb-3 sm:mb-4 text-center">Dotación</h3>
-          <p class="text-sm sm:text-base text-gray-600 text-center leading-relaxed">Más de 200 profesionales de seguridad listos para desplegarse en tus eventos, instalaciones corporativas, obras o cualquier requerimiento especial.</p>
+          <h3 class="text-xl sm:text-2xl font-bold text-blue-900 mb-3 sm:mb-4 text-center">Eventos</h3>
+          <p class="text-sm sm:text-base text-gray-600 text-center leading-relaxed">Cobertura de seguridad para eventos masivos y privados, con control de ingreso, resguardo perimetral y apoyo operativo en terreno.</p>
         </div>
 
         <!-- Card 3: Compromiso -->
         <div class="bg-white rounded-lg shadow-md p-6 sm:p-7 md:p-8 hover:shadow-xl transition-shadow duration-300">
           <div class="flex justify-center mb-4 sm:mb-5 md:mb-6">
-            <img src="/public/icon/compromiso.png" alt="Compromiso" class="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16">
+            <img src="/public/icon/guardia.png" alt="Guardias de Seguridad" class="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16">
           </div>
-          <h3 class="text-xl sm:text-2xl font-bold text-blue-900 mb-3 sm:mb-4 text-center">Compromiso</h3>
-          <p class="text-sm sm:text-base text-gray-600 text-center leading-relaxed">Comprometidos con tu protección 24/7. Estamos contigo en todo momento, ofreciendo respuesta inmediata cuando más lo necesitas.</p>
+          <h3 class="text-xl sm:text-2xl font-bold text-blue-900 mb-3 sm:mb-4 text-center">Guardias de Seguridad</h3>
+          <p class="text-sm sm:text-base text-gray-600 text-center leading-relaxed">Personal capacitado para resguardar personas e instalaciones, con presencia disuasiva, respuesta rápida y supervisión continua.</p>
         </div>
 
       </div>

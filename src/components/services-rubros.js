@@ -221,10 +221,10 @@ export function LayoutAsimetrico() {
       <!-- Título de la Sección -->
       <div class="text-left mb-10 max-w-3xl">
         <h2 class="text-4xl font-extrabold text-gray-800 tracking-tight sm:text-5xl">
-          Estructura de Contenido Asimétrica
+          Rubros en los que Operamos
         </h2>
         <p class="mt-4 text-xl text-gray-500">
-          Diseño principal dividido en dos columnas.
+          Soluciones de seguridad adaptadas a distintos sectores y necesidades operativas.
         </p>
       </div>
 

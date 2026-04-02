@@ -1,11 +1,16 @@
 export function PortadaServicios() {
   const section = document.createElement('section');
+  const mobileBreakpoint = window.matchMedia('(max-width: 640px)');
 
-  // Clases para el fondo de imagen, tamaño completo, y estructura flexible.
-  section.className = 'relative w-full min-h-screen bg-cover bg-no-repeat flex flex-col justify-between font-ubuntu';
-  // Establece la imagen de fondo
-  section.style.backgroundImage = 'url(/public/image/11.jpeg)';
-  section.style.backgroundPosition = 'center -200px';
+  // El fondo debe cubrir todo el ancho visible de la portada.
+  section.className = 'relative w-full min-h-screen bg-cover bg-center bg-no-repeat flex flex-col justify-between font-ubuntu';
+  section.style.backgroundImage = 'url(/public/image/oovvoo.jpg)';
+
+  const updateBackgroundPosition = () => {
+    section.style.backgroundPosition = mobileBreakpoint.matches ? 'center top' : 'center 55%';
+  };
+
+  updateBackgroundPosition();
 
   section.innerHTML = `
     <!-- Overlay Oscuro para Legibilidad -->
@@ -81,6 +86,8 @@ export function PortadaServicios() {
       </div>
     </div>
   `;
+
+  mobileBreakpoint.addEventListener('change', updateBackgroundPosition);
 
   return section;
 }

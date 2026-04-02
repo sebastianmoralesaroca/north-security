@@ -2,11 +2,12 @@ export function Portada() {
   const section = document.createElement('section');
   section.id = 'portada';
   section.className = 'w-full h-screen bg-cover bg-center bg-no-repeat flex items-center relative z-0';
-  section.style.backgroundImage = 'url(/public/image/portada-red.png)';
+  section.style.backgroundImage = 'url(/public/image/port.png)';
 
   section.innerHTML = `
+    <div class="absolute inset-0 bg-red-900/20"></div>
     <div class="container mx-auto px-4 sm:px-6 md:px-8 max-w-7xl">
-      <div class="max-w-2xl">
+      <div class="max-w-2xl relative z-10">
         <p class="text-white/70 text-sm sm:text-base md:text-[20px] uppercase tracking-wide mb-3 md:mb-4">Empresa de Seguridad Privada</p>
         <h1 class="mb-4 md:mb-6 leading-tight">
           <span class="block text-white text-3xl sm:text-4xl md:text-5xl lg:text-[4.2rem] font-extrabold">North Security</span>

@@ -8,7 +8,7 @@ export function NosotrosResumen() {
 
         <!-- Imagen del personal (40%) -->
         <div class="w-full h-[300px] sm:h-[380px] md:h-[470px] relative rounded-lg shadow-2xl overflow-hidden">
-          <img src="/public/image/ggss .jpg" alt="Personal North Security" class="w-full h-full object-cover object-top">
+          <img src="/public/image/estadio.jpg" alt="Personal North Security" class="w-full h-full object-cover object-top">
           <div class="absolute inset-0 bg-black/20"></div>
         </div>
 
@@ -22,12 +22,6 @@ export function NosotrosResumen() {
           <p class="text-gray-700 text-sm sm:text-base md:text-lg leading-relaxed mb-6 sm:mb-7 md:mb-8">
             Fuerza operativa de más de 200 guardias certificados OS10, con seguros de vida y accidentes incluidos. Supervisores experimentados disponibles las 24 horas para atender emergencias y situaciones críticas. Proveemos personal uniformado, radios de comunicación, informes en tiempo real, protocolos de actuación personalizados, rondas programadas, control de accesos y respaldo vehicular. Soluciones integrales para eventos masivos, instalaciones industriales, comerciales y obras en construcción.
           </p>
-
-          <div>
-            <a href="./src/page/nosotros.html" class="btn-primary">
-              Sobre Nosotros
-            </a>
-          </div>
         </div>
 
       </div>
