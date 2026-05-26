@@ -5,22 +5,21 @@ export function Footer() {
 
   footer.innerHTML = `
     <div class="max-w-7xl mx-auto">
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-8">
-        
-        <!-- Left Side - Newsletter -->
-        <div class="space-y-6">
-          <!-- Logo -->
-          <div class="flex items-center space-x-3">
-            <img src="/public/icon/logo.png" alt="Logo" class="h-14 w-14 object-contain">
-            <span class="text-2xl font-bold text-gray-800">North Security</span>
-          </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-start mb-8">
 
-          <!-- Newsletter Form -->
-          <div>
+        <!-- Left Side - Brand -->
+        <div class="flex items-center space-x-3">
+          <img src="/public/icon/logo.png" alt="Logo" class="h-14 w-14 object-contain">
+          <span class="text-2xl font-bold text-gray-800">North Security</span>
+        </div>
+
+        <!-- Right Side - Message Form -->
+        <div class="w-full md:flex md:justify-end">
+          <div class="w-full max-w-xl">
             <h3 class="text-gray-700 font-semibold mb-4">
               Envianos directo un mensaje de WhatsApp
             </h3>
-            <form id="newsletterForm" class="flex items-center space-x-2">
+            <form id="newsletterForm" class="flex flex-col sm:flex-row items-stretch sm:items-center gap-2">
               <input
                 type="email"
                 name="email"
@@ -42,32 +41,6 @@ export function Footer() {
                 Tu nombre, datos y conversaciones son privados, nunca serán expuestos.
             </p>
           </div>
-        </div>
-
-        <!-- Right Side - Links Grid -->
-        <div class="grid grid-cols-2 gap-8 justify-self-end pr-12">
-
-          <!-- Column 1 - Menu -->
-          <div>
-            <h4 class="font-semibold text-gray-800 mb-4">Menú</h4>
-            <ul class="space-y-2.5">
-              <li><a href="#inicio" class="text-sm text-gray-600 hover:text-gray-900 transition-colors">Inicio</a></li>
-              <li><a href="#servicios" class="text-sm text-gray-600 hover:text-gray-900 transition-colors">Servicios</a></li>
-              <li><a href="#contacto" class="text-sm text-gray-600 hover:text-gray-900 transition-colors">Contacto</a></li>
-            </ul>
-          </div>
-
-          <!-- Column 2 - Legal -->
-          <div>
-            <h4 class="font-semibold text-gray-800 mb-4">Legal</h4>
-            <ul class="space-y-2.5">
-              <li><a href="#" class="text-sm text-gray-600 hover:text-gray-900 transition-colors">Términos</a></li>
-              <li><a href="#" class="text-sm text-gray-600 hover:text-gray-900 transition-colors">Privacidad</a></li>
-              <li><a href="#" class="text-sm text-gray-600 hover:text-gray-900 transition-colors">Cookies</a></li>
-              <li><a href="#" class="text-sm text-gray-600 hover:text-gray-900 transition-colors">Regulaciones</a></li>
-            </ul>
-          </div>
-
         </div>
       </div>
 

@@ -45,9 +45,9 @@ export function LayoutAsimetrico() {
   // --- Definición de Tarjetas para GRID 1 ---
   const rubrosGrid1 = [
     {
-      title: 'Seguridad Comercial',
-      description: 'Vigilancia especializada para centros comerciales, tiendas y oficinas.',
-      category: 'Retail',
+      title: 'Seguridad en Instalaciones',
+      description: 'Cobertura integral para edificios, oficinas y recintos privados con control de acceso y vigilancia permanente.',
+      category: 'Servicio',
       bgColor: 'bg-light-red',
       accentColor: 'text-primary',
       gridSpan: 'md:col-span-2 md:row-span-2',
@@ -56,9 +56,9 @@ export function LayoutAsimetrico() {
       imgPlaceholder: 'url(/public/image/servicios/shopp.jpg)'
     },
     {
-      title: 'Residencial',
-      description: 'Control de acceso y seguridad perimetral para condominios y viviendas.',
-      category: 'Hogar',
+      title: 'Control Residencial',
+      description: 'Resguardo de condominios y viviendas con supervisión de accesos, rondas preventivas y apoyo en terreno.',
+      category: 'Servicio',
       bgColor: 'bg-sky-200/90',
       accentColor: 'text-sky-600',
       gridSpan: 'md:col-span-1',
@@ -67,9 +67,9 @@ export function LayoutAsimetrico() {
       imgPlaceholder: 'url(/public/image/servicios/build.jpg)'
     },
     {
-      title: 'Eventos Privados',
-      description: 'Gestión de personalidades y control de flujo en reuniones exclusivas.',
-      category: 'Eventos',
+      title: 'Cobertura de Eventos',
+      description: 'Seguridad para eventos privados y corporativos con control de flujo, accesos y coordinación operativa.',
+      category: 'Servicio',
       bgColor: 'bg-indigo-200/90',
       accentColor: 'text-indigo-600',
       gridSpan: 'md:col-span-1',
@@ -82,9 +82,9 @@ export function LayoutAsimetrico() {
   // --- Definición de Tarjetas para GRID 2 (orden invertido) ---
   const rubrosGrid2 = [
     {
-      title: 'Industrial',
-      description: 'Protección integral para plantas industriales y centros de producción.',
-      category: 'Industria',
+      title: 'Monitoreo CCTV',
+      description: 'Monitoreo constante de instalaciones y perímetros para detectar incidencias y mantener registros de seguridad.',
+      category: 'Servicio',
       bgColor: 'bg-emerald-200/90',
       accentColor: 'text-emerald-600',
       gridSpan: 'md:col-span-1',
@@ -93,9 +93,9 @@ export function LayoutAsimetrico() {
       imgPlaceholder: 'url(/public/image/servicios/industry.png)'
     },
     {
-      title: 'Logística',
-      description: 'Seguridad para almacenes y centros de distribución.',
-      category: 'Transporte',
+      title: 'Patrullaje Preventivo',
+      description: 'Rondas programadas y control de sectores críticos para reforzar presencia y respuesta ante riesgos.',
+      category: 'Servicio',
       bgColor: 'bg-amber-200/90',
       accentColor: 'text-amber-600',
       gridSpan: 'md:col-span-1',
@@ -104,9 +104,9 @@ export function LayoutAsimetrico() {
       imgPlaceholder: 'url(/public/image/servicios/drive.jpg)'
     },
     {
-      title: 'Construcción',
-      description: 'Vigilancia y control de accesos para obras y proyectos en desarrollo.',
-      category: 'Obras',
+      title: 'Seguridad para Obras',
+      description: 'Protección y control de accesos para proyectos en construcción, faenas y operaciones en desarrollo.',
+      category: 'Servicio',
       bgColor: 'bg-light-red',
       accentColor: 'text-primary',
       gridSpan: 'md:col-span-2 md:row-span-2',
@@ -119,9 +119,9 @@ export function LayoutAsimetrico() {
   // --- Definición de Tarjetas para GRID 3 (igual a GRID 1, pero con datos diferentes) ---
   const rubrosGrid3 = [
     {
-      title: 'Corporativo',
-      description: 'Soluciones de seguridad integral para edificios corporativos y oficinas.',
-      category: 'Empresas',
+      title: 'Seguridad Corporativa',
+      description: 'Soluciones de resguardo para empresas, oficinas y edificios corporativos con personal operativo especializado.',
+      category: 'Servicio',
       bgColor: 'bg-light-red',
       accentColor: 'text-primary',
       gridSpan: 'md:col-span-2 md:row-span-2',
@@ -130,9 +130,9 @@ export function LayoutAsimetrico() {
       imgPlaceholder: 'url(/public/image/servicios/cosporate.jpg)'
     },
     {
-      title: 'Hospitalidad',
-      description: 'Seguridad discreta para hoteles y centros turísticos.',
-      category: 'Turismo',
+      title: 'Supervisión Operativa',
+      description: 'Seguimiento en terreno para verificar protocolos, coordinación del personal y respuesta frente a emergencias.',
+      category: 'Servicio',
       bgColor: 'bg-rose-200/90',
       accentColor: 'text-rose-600',
       gridSpan: 'md:col-span-1',
@@ -141,9 +141,9 @@ export function LayoutAsimetrico() {
       imgPlaceholder: 'url(/public/image/servicios/hotel.jpg)'
     },
     {
-      title: 'Educación',
-      description: 'Protección para instituciones educativas y campus universitarios.',
-      category: 'Academia',
+      title: 'Control de Accesos',
+      description: 'Gestión de ingresos y salidas para reforzar la seguridad en recintos con tránsito constante de personas.',
+      category: 'Servicio',
       bgColor: 'bg-purple-200/90',
       accentColor: 'text-purple-600',
       gridSpan: 'md:col-span-1',
@@ -156,9 +156,9 @@ export function LayoutAsimetrico() {
   // --- Definición de Tarjetas para GRID 4 (igual a GRID 2, pero con datos diferentes) ---
   const rubrosGrid4 = [
     {
-      title: 'Eventos Deportivos',
-      description: 'Seguridad especializada para estadios, competencias y eventos deportivos masivos.',
-      category: 'Deportes',
+      title: 'Cobertura de Grandes Eventos',
+      description: 'Servicio de seguridad para actividades masivas con orden operativo, apoyo logístico y resguardo del público.',
+      category: 'Servicio',
       bgColor: 'bg-cyan-200/90',
       accentColor: 'text-cyan-600',
       gridSpan: 'md:col-span-1',
@@ -167,9 +167,9 @@ export function LayoutAsimetrico() {
       imgPlaceholder: 'url(/public/image/servicios/stadium.png)'
     },
     {
-      title: 'Financiero',
-      description: 'Alta seguridad para bancos e instituciones financieras.',
-      category: 'Finanzas',
+      title: 'Escolta y Acompañamiento',
+      description: 'Resguardo especializado para traslados, personal estratégico y operaciones que requieren protección adicional.',
+      category: 'Servicio',
       bgColor: 'bg-teal-200/90',
       accentColor: 'text-teal-600',
       gridSpan: 'md:col-span-1',
@@ -178,9 +178,9 @@ export function LayoutAsimetrico() {
       imgPlaceholder: 'url(/public/image/servicios/bank.png)'
     },
     {
-      title: 'Salud',
-      description: 'Seguridad especializada para hospitales, clínicas y centros médicos.',
-      category: 'Médico',
+      title: 'Protección de Recintos Críticos',
+      description: 'Servicio enfocado en instalaciones sensibles que requieren vigilancia continua, reacción rápida y control estricto.',
+      category: 'Servicio',
       bgColor: 'bg-light-red',
       accentColor: 'text-primary',
       gridSpan: 'md:col-span-2 md:row-span-2',
@@ -221,10 +221,10 @@ export function LayoutAsimetrico() {
       <!-- Título de la Sección -->
       <div class="text-left mb-10 max-w-3xl">
         <h2 class="text-4xl font-extrabold text-gray-800 tracking-tight sm:text-5xl">
-          Rubros en los que Operamos
+          Servicios que Ofrecemos
         </h2>
         <p class="mt-4 text-xl text-gray-500">
-          Soluciones de seguridad adaptadas a distintos sectores y necesidades operativas.
+          Soluciones de seguridad diseñadas para responder a distintos requerimientos operativos y de proteccion.
         </p>
       </div>
 

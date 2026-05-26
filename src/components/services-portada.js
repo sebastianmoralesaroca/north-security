@@ -45,41 +45,41 @@ export function PortadaServicios() {
         <!-- Grid de 4 columnas iguales, con líneas divisorias blancas para contraste -->
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 divide-x divide-white/20">
 
-          <!-- Card 1: Vigilancia Camara -->
+          <!-- Card 1: Comercial -->
           <div class="p-6 text-white text-left">
             <!-- Icono: Usando /public/image/imagen.png sobre fondo rojo más claro para contraste -->
             <div class="mb-4 inline-block p-3 bg-[#FF5733] rounded-md">
-              <img src="/public/icon/camara.png" alt="Icono Camara" class="w-8 h-8 object-contain">
+              <img src="/public/icon/edificio.png" alt="Icono Comercial" class="w-8 h-8 object-contain">
             </div>
-            <h3 class="text-lg font-bold mb-2">Vigilancia por Cámara</h3>
-            <p class="text-sm text-red-100">Sistemas de CCTV y monitoreo 24/7 para vigilancia completa de tus instalaciones.</p>
+            <h3 class="text-lg font-bold mb-2">Comercial</h3>
+            <p class="text-sm text-red-100">Protección para locales, oficinas, centros comerciales y espacios de atención al público con control operativo permanente.</p>
           </div>
 
-          <!-- Card 2: Vigilancia Perimetro -->
+          <!-- Card 2: Privado -->
           <div class="p-6 text-white text-left">
             <div class="mb-4 inline-block p-3 bg-[#FF5733] rounded-md">
-              <img src="/public/icon/perimetro.png" alt="Icono Experiencia" class="w-8 h-8 object-contain">
+              <img src="/public/icon/guardia.png" alt="Icono Privado" class="w-8 h-8 object-contain">
             </div>
-            <h3 class="text-lg font-bold mb-2">Vigilancia Perimetral</h3>
-            <p class="text-sm text-red-100">Control de accesos y protección de perímetros para máxima seguridad.</p>
+            <h3 class="text-lg font-bold mb-2">Privado</h3>
+            <p class="text-sm text-red-100">Servicios de seguridad orientados a condominios, residencias y recintos privados con resguardo confiable y discreto.</p>
           </div>
 
-          <!-- Card 3: Supervicion Constante -->
+          <!-- Card 3: Eventos -->
           <div class="p-6 text-white text-left">
             <div class="mb-4 inline-block p-3 bg-[#FF5733] rounded-md">
-              <img src="/public/icon/supervisor.png" alt="Icono Tecnología" class="w-8 h-8 object-contain">
+              <img src="/public/icon/escenario.png" alt="Icono Eventos" class="w-8 h-8 object-contain">
             </div>
-            <h3 class="text-lg font-bold mb-2">Supervisión Constante</h3>
-            <p class="text-sm text-red-100">Supervisores experimentados disponibles 24/7 para atender emergencias.</p>
+            <h3 class="text-lg font-bold mb-2">Eventos</h3>
+            <p class="text-sm text-red-100">Cobertura para espectáculos, actividades corporativas y eventos masivos con coordinación, acceso controlado y apoyo en terreno.</p>
           </div>
 
-          <!-- Card 4: Patrullaje -->
+          <!-- Card 4: Otros -->
           <div class="p-6 text-white text-left">
             <div class="mb-4 inline-block p-3 bg-[#FF5733] rounded-md">
-              <img src="/public/icon/patrulla.png" alt="Icono Consultoría" class="w-8 h-8 object-contain">
+              <img src="/public/icon/experiencia.png" alt="Icono Otros" class="w-8 h-8 object-contain">
             </div>
-            <h3 class="text-lg font-bold mb-2">Rondas de Patrullaje</h3>
-            <p class="text-sm text-red-100">Rondas programadas y dinámicas para prevenir incidentes y garantizar seguridad.</p>
+            <h3 class="text-lg font-bold mb-2">Otros</h3>
+            <p class="text-sm text-red-100">Soluciones adaptadas a requerimientos especiales, instalaciones temporales, obras y operaciones con necesidades específicas.</p>
           </div>
 
         </div>

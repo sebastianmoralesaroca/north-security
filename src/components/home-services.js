@@ -25,51 +25,47 @@ export function ServiciosResumen() {
         <!-- Cards Derecha (60%) -->
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5 md:gap-6">
 
-          <!-- Card 1: Vigilancia por Cámara -->
-          <div class="bg-white bg-opacity-30 backdrop-blur-sm rounded-xl p-5 sm:p-6 shadow-2xl hover:bg-opacity-40 transition duration-300 transform hover:scale-[1.02]">
+          <!-- Card 1: Empresa Certificada OS10 -->
+          <div class="rounded-xl p-5 sm:p-6 shadow-2xl backdrop-blur-sm transition duration-300 transform hover:scale-[1.02]" style="background: rgba(196, 111, 111, 0.88); border: 1px solid rgba(255, 255, 255, 0.16);">
             <div class="flex justify-center mb-3 sm:mb-4">
-              <img src="/public/icon/camara.png" alt="Vigilancia por Cámara" class="h-10 w-10 sm:h-12 sm:w-12 filter drop-shadow-md">
+              <img src="/public/icon/certificado.png" alt="Empresa Certificada OS10" class="h-10 w-10 sm:h-12 sm:w-12 opacity-95">
             </div>
-            <h3 class="text-lg sm:text-xl font-bold text-white text-center mb-2">Vigilancia por Cámara (CCTV)</h3>
-            <!-- DESCRIPCIÓN MEJORADA -->
-            <p class="text-white text-xs sm:text-sm text-center leading-snug">
-              Proveemos personal calificado para la operación y monitoreo de sistemas CCTV, con vigilancia en tiempo real, detección de incidencias y control permanente de tus instalaciones.
+            <h3 class="text-lg sm:text-xl font-bold text-white text-center mb-2">Empresa Certificada OS10</h3>
+            <p class="text-white text-sm sm:text-base text-center leading-relaxed">
+              Contamos con certificación OS10 vigente, cumpliendo con la normativa exigida para entregar servicios de seguridad privada con respaldo legal, operativo y profesional.
             </p>
           </div>
 
-          <!-- Card 2: Vigilancia Perímetro -->
-          <div class="bg-white bg-opacity-30 backdrop-blur-sm rounded-xl p-5 sm:p-6 shadow-2xl hover:bg-opacity-40 transition duration-300 transform hover:scale-[1.02]">
+          <!-- Card 2: Supervisión Constante -->
+          <div class="rounded-xl p-5 sm:p-6 shadow-2xl backdrop-blur-sm transition duration-300 transform hover:scale-[1.02]" style="background: rgba(196, 111, 111, 0.88); border: 1px solid rgba(255, 255, 255, 0.16);">
             <div class="flex justify-center mb-3 sm:mb-4">
-              <img src="/public/icon/perimetro.png" alt="Vigilancia Perímetro" class="h-10 w-10 sm:h-12 sm:w-12 filter drop-shadow-md">
-            </div>
-            <h3 class="text-lg sm:text-xl font-bold text-white text-center mb-2">Vigilancia Perímetro</h3>
-            <!-- DESCRIPCIÓN MEJORADA -->
-            <p class="text-white text-xs sm:text-sm text-center leading-snug">
-              Estrategias de seguridad física diseñadas para proteger los límites de tu propiedad. Incluye control de accesos riguroso, barreras físicas y sensores perimetrales avanzados.
-            </p>
-          </div>
-
-          <!-- Card 3: Supervisión Constante -->
-          <div class="bg-white bg-opacity-30 backdrop-blur-sm rounded-xl p-5 sm:p-6 shadow-2xl hover:bg-opacity-40 transition duration-300 transform hover:scale-[1.02]">
-            <div class="flex justify-center mb-3 sm:mb-4">
-              <img src="/public/icon/supervisor.png" alt="Supervisión Constante" class="h-10 w-10 sm:h-12 sm:w-12 filter drop-shadow-md">
+              <img src="/public/icon/servicios-de-guardia.png" alt="Supervisión Constante" class="h-10 w-10 sm:h-12 sm:w-12 opacity-95">
             </div>
             <h3 class="text-lg sm:text-xl font-bold text-white text-center mb-2">Supervisión Constante</h3>
-            <!-- DESCRIPCIÓN MEJORADA -->
-            <p class="text-white text-xs sm:text-sm text-center leading-snug">
-              Contamos con un equipo de supervisores disponibles 24/7 que coordina las operaciones en sitio, realiza auditorías internas y responde inmediatamente ante cualquier emergencia reportada.
+            <p class="text-white text-sm sm:text-base text-center leading-relaxed">
+              Mantenemos control permanente de cada operación con supervisores atentos a protocolos, incidencias y cumplimiento de los estándares de seguridad en todo momento.
             </p>
           </div>
 
-          <!-- Card 4: Rondas de Patrullaje -->
-          <div class="bg-white bg-opacity-30 backdrop-blur-sm rounded-xl p-5 sm:p-6 shadow-2xl hover:bg-opacity-40 transition duration-300 transform hover:scale-[1.02]">
+          <!-- Card 3: Personal Capacitado -->
+          <div class="rounded-xl p-5 sm:p-6 shadow-2xl backdrop-blur-sm transition duration-300 transform hover:scale-[1.02]" style="background: rgba(196, 111, 111, 0.88); border: 1px solid rgba(255, 255, 255, 0.16);">
             <div class="flex justify-center mb-3 sm:mb-4">
-              <img src="/public/icon/patrulla.png" alt="Rondas de Patrullaje" class="h-10 w-10 sm:h-12 sm:w-12 filter drop-shadow-md">
+              <img src="/public/icon/guardiablanco.png" alt="Personal Capacitado" class="h-10 w-10 sm:h-12 sm:w-12 opacity-95">
             </div>
-            <h3 class="text-lg sm:text-xl font-bold text-white text-center mb-2">Rondas de Patrullaje</h3>
-            <!-- DESCRIPCIÓN MEJORADA -->
-            <p class="text-white text-xs sm:text-sm text-center leading-snug">
-              Patrullaje dinámico con vehículos de respuesta rápida, realizado por personal motorizado que verifica la seguridad en puntos críticos y provee asistencia inmediata si se requiere.
+            <h3 class="text-lg sm:text-xl font-bold text-white text-center mb-2">Personal Capacitado</h3>
+            <p class="text-white text-sm sm:text-base text-center leading-relaxed">
+              Disponemos de guardias capacitados y certificados para responder con criterio, presencia profesional y preparación ante distintos escenarios operativos.
+            </p>
+          </div>
+
+          <!-- Card 4: Seguro de Vida y Responsabilidad Civil -->
+          <div class="rounded-xl p-5 sm:p-6 shadow-2xl backdrop-blur-sm transition duration-300 transform hover:scale-[1.02]" style="background: rgba(196, 111, 111, 0.88); border: 1px solid rgba(255, 255, 255, 0.16);">
+            <div class="flex justify-center mb-3 sm:mb-4">
+              <img src="/public/icon/seguro-de-vida.png" alt="Seguro de Vida y Responsabilidad Civil" class="h-10 w-10 sm:h-12 sm:w-12 opacity-95">
+            </div>
+            <h3 class="text-lg sm:text-xl font-bold text-white text-center mb-2">Seguro de Vida y Responsabilidad Civil</h3>
+            <p class="text-white text-sm sm:text-base text-center leading-relaxed">
+              Nuestros servicios cuentan con respaldo de seguro de vida y responsabilidad civil, entregando mayor tranquilidad y cobertura ante eventualidades operativas.
             </p>
           </div>
 
