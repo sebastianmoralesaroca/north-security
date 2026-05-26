@@ -9,7 +9,7 @@ export function Footer() {
 
         <!-- Left Side - Brand -->
         <div class="flex items-center space-x-3">
-          <img src="/public/icon/logo.png" alt="Logo" class="h-14 w-14 object-contain">
+          <img src="/public/icon/buscar.png" alt="Logo" class="h-14 w-14 object-contain">
           <span class="text-2xl font-bold text-gray-800">North Security</span>
         </div>
 

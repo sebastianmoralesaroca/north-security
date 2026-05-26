@@ -6,7 +6,6 @@ export function Header() {
   // Detectar página actual
   const currentPath = window.location.pathname;
   const isIndex = currentPath === '/' || currentPath.includes('index.html') || currentPath.endsWith('/north-security') || currentPath.endsWith('/north-security/');
-  const isServices = currentPath.includes('services.html');
 
   // Determinar base path para rutas
   const basePath = isIndex ? './' : '../../';
@@ -29,7 +28,6 @@ export function Header() {
       <!-- Navegación Desktop -->
       <nav class="hidden md:flex items-center gap-6 font-semibold">
         <a href="${basePath}index.html" class="nav-link ${isIndex ? 'text-[#C42100]' : 'text-white'} hover:text-[#C42100] transition" ${isIndex ? 'data-active="true"' : ''}>Inicio</a>
-        <a href="${basePath}src/page/services.html" class="nav-link ${isServices ? 'text-[#C42100]' : 'text-white'} hover:text-[#C42100] transition" ${isServices ? 'data-active="true"' : ''}>Servicios</a>
         <a href="#form" class="bg-[#C42100] text-white px-6 py-2 rounded-full hover:bg-[#a01b00] transition smooth-scroll">Contacto</a>
       </nav>
     </div>
@@ -38,7 +36,6 @@ export function Header() {
     <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
       <nav class="flex flex-col p-4 space-y-4 font-semibold">
         <a href="${basePath}index.html" class="nav-link-mobile ${isIndex ? 'text-[#C42100]' : 'text-gray-900'} hover:text-[#C42100] transition py-2" ${isIndex ? 'data-active="true"' : ''}>Inicio</a>
-        <a href="${basePath}src/page/services.html" class="nav-link-mobile ${isServices ? 'text-[#C42100]' : 'text-gray-900'} hover:text-[#C42100] transition py-2" ${isServices ? 'data-active="true"' : ''}>Servicios</a>
         <a href="#form" class="bg-[#C42100] text-white px-6 py-3 rounded-full hover:bg-[#a01b00] transition text-center smooth-scroll-mobile">Contacto</a>
       </nav>
     </div>

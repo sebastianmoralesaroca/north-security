@@ -15,7 +15,7 @@ export function NosotrosResumen() {
         <!-- Contenido (60%) -->
         <div class="flex flex-col">
           <div class="flex items-center gap-3 sm:gap-4 mb-4 sm:mb-5 md:mb-6">
-            <img src="/public/icon/logo.png" alt="Logo North Security" class="h-16 sm:h-20 md:h-[6rem]">
+            <img src="/public/icon/buscar.png" alt="Logo North Security" class="h-16 sm:h-20 md:h-[6rem]">
             <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800">North Security</h2>
           </div>
 

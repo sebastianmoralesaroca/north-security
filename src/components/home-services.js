@@ -17,8 +17,8 @@ export function ServiciosResumen() {
           <p class="text-base sm:text-lg mb-6 sm:mb-7 md:mb-8 leading-relaxed">
             Somos líderes en seguridad, ofreciendo soluciones especializadas de vigilancia con tecnología avanzada y personal altamente capacitado. Garantizamos protección integral, eficiencia operativa y tranquilidad las 24 horas para tu empresa o propiedad, creando un entorno seguro y controlado.
           </p>
-          <a href="./src/page/services.html" class="inline-flex items-center justify-center px-6 sm:px-7 md:px-8 py-2.5 sm:py-3 bg-white text-[#C42100] font-bold rounded-md text-base sm:text-lg shadow-xl uppercase tracking-wider transition-all duration-300 hover:bg-gray-100 hover:shadow-2xl hover:scale-[1.03]">
-            Ver Todos los Servicios
+          <a href="#form" class="inline-flex items-center justify-center px-6 sm:px-7 md:px-8 py-2.5 sm:py-3 bg-white text-[#C42100] font-bold rounded-md text-base sm:text-lg shadow-xl uppercase tracking-wider transition-all duration-300 hover:bg-gray-100 hover:shadow-2xl hover:scale-[1.03]">
+            Solicitar Información
           </a>
         </div>
 
@@ -39,7 +39,7 @@ export function ServiciosResumen() {
           <!-- Card 2: Supervisión Constante -->
           <div class="rounded-xl p-5 sm:p-6 shadow-2xl backdrop-blur-sm transition duration-300 transform hover:scale-[1.02]" style="background: rgba(196, 111, 111, 0.88); border: 1px solid rgba(255, 255, 255, 0.16);">
             <div class="flex justify-center mb-3 sm:mb-4">
-              <img src="/public/icon/servicios-de-guardia.png" alt="Supervisión Constante" class="h-10 w-10 sm:h-12 sm:w-12 opacity-95">
+              <img src="/public/icon/buscar.png" alt="Supervisión Constante" class="h-10 w-10 sm:h-12 sm:w-12 opacity-95">
             </div>
             <h3 class="text-lg sm:text-xl font-bold text-white text-center mb-2">Supervisión Constante</h3>
             <p class="text-white text-sm sm:text-base text-center leading-relaxed">

@@ -10,7 +10,7 @@ export function Clientes() {
     { src: '/public/clients/fastfest.jpg', alt: 'Fast Fest' },
     { src: '/public/clients/lidadeprimera.png', alt: 'Liga de Primera' },
     { src: '/public/clients/planvital.png', alt: 'Plan Vital' },
-    { src: '/public/clients/serena.png', alt: 'Serena' },
+    { src: '/public/clients/puertasdelmar.png', alt: 'Puertas del Mar' },
     { src: '/public/clients/serenasuite.png', alt: 'Serena Suite' },
     { src: '/public/clients/todogoma.png', alt: 'Todo Goma' },
   ];
