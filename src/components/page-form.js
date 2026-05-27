@@ -1,3 +1,4 @@
+import emailjs from 'https://cdn.jsdelivr.net/npm/@emailjs/browser@4/+esm';
 import { openWhatsAppMessage } from '../utils/whatsapp.js';
 
 const EMAILJS_SERVICE_ID = 'service_mibdcsc';
@@ -247,10 +248,6 @@ export function SignUpPage() {
         return;
       }
 
-      if (!window.emailjs) {
-        alert('No se pudo cargar EmailJS. Revisa la conexión o la ruta del script.');
-        return;
-      }
 
       if (EMAILJS_PUBLIC_KEY === 'TU_PUBLIC_KEY') {
         alert('Falta configurar la Public Key de EmailJS.');
@@ -260,7 +257,7 @@ export function SignUpPage() {
       const data = getFormData();
       syncEmailJsFields(data);
 
-      window.emailjs.sendForm(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, form, EMAILJS_PUBLIC_KEY)
+      emailjs.sendForm(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, form, EMAILJS_PUBLIC_KEY)
         .then(() => {
           alert('Correo enviado');
           form.reset();
