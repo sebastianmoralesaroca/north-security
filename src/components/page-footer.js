@@ -1,3 +1,5 @@
+import { openWhatsAppMessage } from '../utils/whatsapp.js';
+
 export function Footer() {
   const footer = document.createElement('footer');
   footer.id = 'footer';
@@ -9,7 +11,7 @@ export function Footer() {
 
         <!-- Left Side - Brand -->
         <div class="flex items-center space-x-3">
-          <img src="/public/icon/buscar.png" alt="Logo" class="h-14 w-14 object-contain">
+          <img src="/public/icon/logo.png" alt="Logo" class="h-14 w-14 object-contain">
           <span class="text-2xl font-bold text-gray-800">North Security</span>
         </div>
 
@@ -21,8 +23,8 @@ export function Footer() {
             </h3>
             <form id="newsletterForm" class="flex flex-col sm:flex-row items-stretch sm:items-center gap-2">
               <input
-                type="email"
-                name="email"
+                type="text"
+                name="message"
                 placeholder="Escribe tu mensaje aquí..."
                 required
                 class="flex-1 px-4 py-2.5 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white text-sm"
@@ -53,7 +55,6 @@ export function Footer() {
     </div>
   `;
 
-  // Newsletter form handling
   const form = footer.querySelector('#newsletterForm');
   form.addEventListener('submit', handleNewsletterSubmit);
 
@@ -62,15 +63,17 @@ export function Footer() {
 
 function handleNewsletterSubmit(e) {
   e.preventDefault();
-  
+
   const formData = new FormData(e.target);
-  const email = formData.get('email');
-  
-  console.log('Newsletter subscription:', email);
-  
-  // Aquí puedes agregar la lógica para enviar el email a tu backend
-  alert('Mensaje enviado. Muchas gracias!!');
-  
-  // Limpiar el formulario
+  const message = formData.get('message')?.toString().trim();
+
+  if (!message) {
+    e.target.reportValidity();
+    return;
+  }
+
+  openWhatsAppMessage(`Hola North Security, quiero hablar con ustedes:
+
+${message}`);
   e.target.reset();
 }

@@ -22,5 +22,8 @@
   "devDependencies": {
     "@tailwindcss/cli": "^4.2.4",
     "tailwindcss": "^4.1.17"
+  },
+  "dependencies": {
+    "@emailjs/browser": "^4.4.1"
   }
 }

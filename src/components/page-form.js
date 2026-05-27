@@ -1,3 +1,10 @@
+import { openWhatsAppMessage } from '../utils/whatsapp.js';
+
+const EMAILJS_SERVICE_ID = 'service_mibdcsc';
+const EMAILJS_TEMPLATE_ID = 'template_2pq8zph';
+const EMAILJS_PUBLIC_KEY = '5BPLcVCE9UaHuL0GV';
+
+
 export function SignUpPage() {
   const section = document.createElement('section');
   section.id = 'form';
@@ -50,6 +57,9 @@ export function SignUpPage() {
             <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-6 sm:mb-7 md:mb-8 text-center">Cotiza tu Servicio de <span class="text-[#C42100]">Seguridad</span></h2>
 
             <form id="contactForm" class="space-y-4 sm:space-y-5">
+              <input type="hidden" name="name" id="emailName">
+              <input type="hidden" name="message" id="emailMessage">
+
               <!-- Nombre y Apellido -->
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
                 <div>
@@ -201,28 +211,69 @@ export function SignUpPage() {
   setTimeout(() => {
     const form = section.querySelector('#contactForm');
     const whatsappBtn = section.querySelector('#whatsappBtn');
+    const getSelectedOptionText = (fieldName) => {
+      const field = form.elements[fieldName];
+      return field?.selectedOptions?.[0]?.textContent.trim() || '';
+    };
+    const getFormData = () => Object.fromEntries(new FormData(form).entries());
+    const getQuoteFields = (data) => [
+      ['Nombre', `${data.nombre} ${data.apellido}`],
+      ['Email corporativo', data.email],
+      ['Teléfono', data.telefono],
+      ['Empresa', data.empresa],
+      ['Rubro', getSelectedOptionText('rubro')],
+      ['Ciudad / Ubicación', data.ubicacion],
+      ['Página web', data.website || 'No indicada'],
+      ['Servicio requerido', getSelectedOptionText('servicio')],
+      ['Comentarios', data.mensaje || 'Sin comentarios adicionales'],
+    ];
+    const buildQuoteMessage = (data) => [
+      'Hola North Security, quiero solicitar una cotización.',
+      '',
+      'Datos del formulario:',
+      ...getQuoteFields(data).map(([label, value]) => `${label}: ${value}`),
+    ].join('\n');
+    const syncEmailJsFields = (data) => {
+      form.elements.namedItem('name').value = `${data.nombre} ${data.apellido}`;
+      form.elements.namedItem('message').value = buildQuoteMessage(data);
+    };
 
     // Envío por Email
     form.addEventListener('submit', function(e) {
       e.preventDefault();
 
-      // Recoger datos del formulario
-      const formData = new FormData(form);
-      const data = Object.fromEntries(formData.entries());
+      if (!form.checkValidity()) {
+        form.reportValidity();
+        return;
+      }
 
-      console.log('Datos del formulario (Email):', data);
+      if (!window.emailjs) {
+        alert('No se pudo cargar EmailJS. Revisa la conexión o la ruta del script.');
+        return;
+      }
 
-      // Mostrar mensaje de éxito
-      alert('¡Gracias por tu solicitud! Nos pondremos en contacto contigo en menos de 24 horas.');
+      if (EMAILJS_PUBLIC_KEY === 'TU_PUBLIC_KEY') {
+        alert('Falta configurar la Public Key de EmailJS.');
+        return;
+      }
 
-      // Limpiar formulario
-      form.reset();
+      const data = getFormData();
+      syncEmailJsFields(data);
+
+      window.emailjs.sendForm(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, form, EMAILJS_PUBLIC_KEY)
+        .then(() => {
+          alert('Correo enviado');
+          form.reset();
+        })
+        .catch((error) => {
+          console.error('Error al enviar correo con EmailJS:', error);
+          alert('No se pudo enviar el correo. Inténtalo nuevamente.');
+        });
     });
 
     // Envío por WhatsApp
     whatsappBtn.addEventListener('click', function() {
-      const formData = new FormData(form);
-      const data = Object.fromEntries(formData.entries());
+      const data = getFormData();
 
       // Validar campos requeridos
       if (!form.checkValidity()) {
@@ -230,26 +281,14 @@ export function SignUpPage() {
         return;
       }
 
-      // Construir mensaje de WhatsApp
-      let mensaje = `¡Hola! Me gustaría solicitar una cotización:\n\n`;
-      mensaje += `*Nombre:* ${data.nombre} ${data.apellido}\n`;
-      mensaje += `*Email:* ${data.email}\n`;
-      mensaje += `*Teléfono:* ${data.telefono}\n`;
-      mensaje += `*Empresa:* ${data.empresa}\n`;
-      mensaje += `*Rubro:* ${data.rubro}\n`;
-      mensaje += `*Ubicación:* ${data.ubicacion}\n`;
-      if (data.website) mensaje += `*Sitio Web:* ${data.website}\n`;
-      mensaje += `*Servicio:* ${data.servicio}\n`;
-      if (data.mensaje) mensaje += `\n*Comentarios:* ${data.mensaje}`;
+      const mensaje = [
+        'Hola North Security, quiero solicitar una cotización.',
+        '',
+        '*Datos del formulario:*',
+        ...getQuoteFields(data).map(([label, value]) => `*${label}:* ${value}`),
+      ].join('\n');
 
-      // Codificar mensaje para URL
-      const mensajeCodificado = encodeURIComponent(mensaje);
-
-      // Número de WhatsApp (reemplazar con el número real)
-      const numeroWhatsApp = '56912345678'; // Cambiar por el número real
-
-      // Abrir WhatsApp
-      window.open(`https://wa.me/${numeroWhatsApp}?text=${mensajeCodificado}`, '_blank');
+      openWhatsAppMessage(mensaje);
     });
   }, 0);
 
