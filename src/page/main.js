@@ -3,6 +3,7 @@ import { Portada } from '../components/home-portada.js';
 import { CardPrincipal } from '../components/home-cards.js';
 import { Clientes } from '../components/page-clientes.js';
 import { ServiciosResumen } from '../components/home-services.js';
+import { GaleriaServicios } from '../components/home-service-gallery.js';
 import { Colaboraciones } from '../components/page-partner.js';
 import { SignUpPage } from '../components/page-form.js';
 import { Footer } from '../components/page-footer.js';
@@ -21,6 +22,7 @@ function renderHomePage() {
   app.appendChild(CardPrincipal());
   app.appendChild(Clientes());
   app.appendChild(ServiciosResumen());
+  app.appendChild(GaleriaServicios());
   app.appendChild(Colaboraciones());
   app.appendChild(SignUpPage());
   app.appendChild(Footer());

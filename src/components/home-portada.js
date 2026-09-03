@@ -2,7 +2,7 @@ export function Portada() {
   const section = document.createElement('section');
   section.id = 'portada';
   section.className = 'w-full h-screen bg-cover bg-center bg-no-repeat flex items-center relative z-0';
-  section.style.backgroundImage = 'url(/public/image/port.png)';
+  section.style.backgroundImage = 'url(/public/image/portada.png)';
 
   section.innerHTML = `
     <div class="absolute inset-0 bg-red-900/20"></div>
